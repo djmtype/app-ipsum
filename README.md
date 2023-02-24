@@ -5,8 +5,8 @@ A Nuxt v3 with Content and Image PWA test; not meant to be used as a starter tem
 
 Make sure to install the dependencies:
 
-# pnpm
-```
+### pnpm
+```bash
 pnpm install
 ```
 
