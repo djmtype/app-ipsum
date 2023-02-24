@@ -6,12 +6,12 @@ export default defineNuxtConfig({
 		"@nuxt/content",
 		"@nuxt/image-edge",
 
-		[
-			"@nuxt-modules/compression",
-			{
-				algorithm: "brotliCompress",
-			},
-		],
+		// [
+		// 	"@nuxt-modules/compression",
+		// 	{
+		// 		algorithm: "brotliCompress",
+		// 	},
+		// ],
 	],
 
 	nitro: {
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 	},
 
 	image: {
-		// staticFilename: "[publicPath]/images/[name]-foobar-[hash][ext]",
+		staticFilename: "[publicPath]/images/[name]-[hash][ext]",
 		// The screen sizes predefined by `@nuxt/image`:
 		screens: {
 			sm: 580,
@@ -43,11 +43,7 @@ export default defineNuxtConfig({
 		head: {
 			charset: "utf-8",
 			viewport: "initial-scale=1",
-			title: "My App",
-			meta: [
-				// <meta name="description" content="My amazing site">
-				{ name: "description", content: "My amazing site." },
-			],
+			title: "AppIpsum",
 		},
 	},
 
