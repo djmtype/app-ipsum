@@ -23,6 +23,7 @@ export default defineNuxtConfig({
 	},
 
 	image: {
+		staticFilename: '[publicPath]/[name]-[hash][ext]',
 		// The screen sizes predefined by `@nuxt/image`:
 		screens: {
 			sm: 580,
