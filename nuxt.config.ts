@@ -55,6 +55,9 @@ export default defineNuxtConfig({
 
 	postcss: postcssConfig,
 	
+	experimental: {
+		payloadExtraction: false
+	}
 
 	// css: ['@style/main.css'],
 })
