@@ -14,9 +14,9 @@ export default defineNuxtConfig({
 		// ],
 	],
 
-	nitro: {
-		compressPublicAssets: true,
-	},
+	// nitro: {
+	// 	compressPublicAssets: true,
+	// },
 
 	content: {
 		documentDriven: true,
