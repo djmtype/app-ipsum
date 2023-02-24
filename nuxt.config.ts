@@ -14,16 +14,16 @@ export default defineNuxtConfig({
 		],
 	],
 
-	// nitro: {
-	// 	compressPublicAssets: true,
-	// },
+	nitro: {
+		compressPublicAssets: true,
+	},
 
 	content: {
 		documentDriven: true,
 	},
 
 	image: {
-		staticFilename: "/.output/public/images/[name]-[hash][ext]",
+		// staticFilename: "[publicPath]/images/[name]-foobar-[hash][ext]",
 		// The screen sizes predefined by `@nuxt/image`:
 		screens: {
 			sm: 580,
@@ -58,6 +58,7 @@ export default defineNuxtConfig({
 	},
 
 	postcss: postcssConfig,
+	
 
 	// css: ['@style/main.css'],
 })
