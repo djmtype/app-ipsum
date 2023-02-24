@@ -1,0 +1,50 @@
+<template>
+	<header class="banner">
+		<div class="wrapper">
+			<BaseLogo id="logo" class="base-logo" />
+
+			<Nav />
+		</div>
+	</header>
+</template>
+
+<style scoped>
+	header {
+		background-color: white;
+		position: sticky;
+		top: calc(-1 * var(--offset-height) - var(--gutter));
+		z-index: 20;
+
+		@media (--viewport-sm) {
+			top: 0;
+		}
+	}
+	header > .wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		padding-block: var(--space-lg);
+		align-items: center;
+		justify-content: space-between;
+		gap: var(--space-sm);
+
+		flex-direction: column;
+
+		@media (--viewport-sm) {
+			flex-direction: row;
+		}
+	}
+	.wrapper > *:first-child,
+	.wrapper > *:last-child {
+		margin-inline: auto;
+
+		@media (--viewport-md) {
+			margin-inline: unset;
+		}
+	}
+
+	.base-logo {
+		--color-logo: var(--bg-color);
+		width: clamp(5rem, 50vw, 10rem);
+		height: auto;
+	}
+</style>

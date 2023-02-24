@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@csstools/postcss-global-data": "^1.0.3",
+    "@nuxt/content": "^2.4.3",
+    "@nuxt/image-edge": "^1.0.0-27952794.567c688",
+    "nuxt": "^3.2.2",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-preset-env": "^8.0.1"
+  },
+  "dependencies": {
+    "@fontsource/fraunces": "^4.5.11",
+    "@fontsource/plus-jakarta-sans": "^4.5.11",
+    "@nuxt-modules/compression": "^0.1.0",
+    "vite-plugin-compression": "^0.5.1"
+  }
+}
