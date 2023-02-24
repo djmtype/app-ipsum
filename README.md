@@ -1,17 +1,9 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# App Ipsum
+A Nuxt v3 with Content and Image PWA test; not meant to be used as a starter template.
 
 ## Setup
 
 Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
 
 # pnpm
 pnpm install
