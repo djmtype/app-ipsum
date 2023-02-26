@@ -6,24 +6,28 @@ export default defineNuxtConfig({
 		"@nuxt/content",
 		"@nuxt/image-edge",
 
-		[
-			"@nuxt-modules/compression",
-			{
-				algorithm: "brotliCompress",
-			},
-		],
+		// [
+		// 	"@nuxt-modules/compression",
+		// 	{
+		// 		algorithm: "brotliCompress",
+		// 	},
+		// ],
 	],
 
 	nitro: {
-		compressPublicAssets: true,
+		compressPublicAssets: {
+			gzip: true, brotli: true 
+		},
 	},
+
+	ssr: true,
 
 	content: {
 		documentDriven: true,
 	},
 
 	image: {
-		// staticFilename: "[publicPath]/images/[name]-[hash][ext]",
+		//  staticFilename: "[publicPath]/images/[name]-[hash][ext]",
 		// The screen sizes predefined by `@nuxt/image`:
 		screens: {
 			sm: 580,
